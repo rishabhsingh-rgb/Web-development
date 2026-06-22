@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.container{
+    width:90%;
+    max-width:500px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    border:solid 2px green;
+    width: 250px;
+    background:linear-gradient(5deg,yellow,orange);
+    margin: 0 auto 20px;
+    color:#333;
+    border-radius: 15px;
+}
+
+.input-section{
+    display:flex;
+    gap:10px;
+}
+
+input{
+    flex:1;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    background:#667eea;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#5563d6;
+}
+
+.stats{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
+    font-weight:bold;
+    color:#444;
+}
+
+#taskList{
+    list-style:none;
+}
+
+
+.task-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background: linear-gradient(55deg,pink,transparent);
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:8px;
+}
+
+.task-left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.completed{
+    text-decoration:line-through;
+    color:gray;
+}
+
+.delete-btn{
+    background:red;
+    padding:8px 12px;
+}
+
+.delete-btn:hover{
+    background:darkred;
+}
